@@ -1,0 +1,260 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+.nav {
+	width: 100%;
+	height: 144px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: #7482fd;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 50px;
+}
+.nav .menu {
+	display: flex;
+}
+.nav .menu .noti ul li a {
+	line-height: 125px;
+}
+.nav .menu img {
+	width: 150px;
+	height:150px;
+	margin-bottom: -80px;
+}
+.nav .menu img:hover {
+	opacity: 0.8;
+}
+.nav .menu ul {
+	list-style: none;
+}
+.nav .menu ul li {
+	display: inline-block;
+}
+.nav .menu ul li a {
+	text-decoration: none;
+	padding: 0 16px;
+	box-sizing: border-box;
+	color: white;
+	font-size: 20px;
+	margin-left: 30px;
+}
+.nav .menu ul li a:hover {
+	color: red;
+}
+.content .slide-top {
+	margin: 100px 140px;
+	box-sizing: border-box;
+}
+.content .slide-top img{
+	margin-top: 20px;
+}
+.content .info .lienhe {
+	margin-bottom: 30px;
+}
+.info .info-all ul li {
+	display: inline-flex;
+}
+.info .info-all ul li button {
+	margin-top: 50px;
+	border: 1px solid #f4a84e;
+	background-color: #f83ede;
+	border-radius: 50px;
+	padding: 10px 40px;
+	cursor: pointer;
+}
+.info .info-all ul li button:hover {
+	background-color: #f4a84e;
+}
+.info .info-all ul li button a {
+	color: white;
+	text-decoration: none;
+}
+.info .info-all ul li .tach {
+	margin: 0 100px;
+}
+.info-1 {
+	text-align: center;
+	padding: 40px;
+	background-color: #00FFFF;
+}
+.info-1 .info-site a {
+	text-decoration: none;
+}
+.info-1 .info-site a:hover {
+	color: red;
+}
+.footer {
+	margin-top: 80px;
+}
+.nav input {
+	display: none;
+}
+.bars-left i {
+	display: none;
+}
+.bars-1 i {
+	display: none;
+}
+.notify {
+		width: 300px;
+		height: 200px;
+		background-color: #C0C0C0;
+		
+		transform-origin: 50% top;
+		animation: notify1 ease 0.2s;
+		display: none;
+}
+	.notifi:hover .notify {
+		display: block;
+}
+@keyframes notify1 {
+		from {
+			opacity: 0;
+			transform: scale(0);
+		}
+		to {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+	.notify p {
+		font-size: 30px;
+		line-height: 200px;
+	}
+@media screen and (max-width: 970px) {
+	.notify {
+		width: 300px;
+		height: 200px;
+		background-color: #C0C0C0;
+		position: absolute;
+		transform-origin: 50% top;
+		animation: notify1 ease 0.2s;
+		display: none;
+	}
+	.notifi:hover .notify {
+		display: block;
+	}
+	@keyframes notify1 {
+		from {
+			opacity: 0;
+			transform: scale(0);
+		}
+		to {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+	.notify p {
+		font-size: 30px;
+		line-height: 200px;
+	}
+	.menu .noti {
+		margin-left: 850px;
+	}
+	.nav .menu ul li a {
+		font-size: 40px;
+	}
+	.nav.menu img {
+		width: 160px;
+		height: 160px;
+	}
+	.content h2 {
+		font-size: 40px;
+	}
+	.content .slide-top img {
+		width: 926px;
+		height: 843px;
+	}
+	.info .info-all ul li button {
+		padding: 30px 60px;
+	}
+	.info .info-all ul li button a {
+		font-size: 25px;
+	}
+	.footer .info-1 span {
+		font-size: 40px;
+	}
+	.nav .menu .menu1{
+		display: none;
+	}
+	.nav .bars i {
+		font-size: 60px;
+		margin-top: 34px;
+		cursor: pointer; 
+	}
+	.nav .bars i:hover {
+		color: white;
+	}
+	.nav .bars-left {
+		position: fixed;
+		width: 400px;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		background-color: #000080;
+		transform: translateX(-100%);
+		transition: transform linear 0.2s;
+	}
+	.lon:checked ~ .bars-left {
+		transform: translateX(0%);
+	}
+	.check-box:checked ~ .menu .bars-left {
+	transform: translateX(0%);
+	}
+	.nav .bars-left ul {
+		list-style: none;
+	}
+	.nav .bars-left li {
+		padding: 10px;
+	}
+	.nav .bars-left a {
+		color: black;
+		font-size: 60px;
+		text-decoration: none;
+	}
+	.nav .bars-left a img {
+		width: 300px;
+		height: 300px;
+	}
+	.nav .bars-1 i {
+		margin-left: -1080px;
+		font-size: 60px;
+		cursor: pointer;
+}
+	.bars-left i {
+		font-size: 50px;
+		color: red;
+		margin-top: 40px;
+		margin-left: 190px;
+		cursor: pointer;
+		display: block;
+	}
+	.bars-1 i {
+	display: block;
+	}
+	.bars-left ul {
+		list-style: none;
+	}
+	.nav {
+		margin: 0;
+		padding: 0;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
